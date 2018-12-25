@@ -1,0 +1,23 @@
+<p>
+  events test!
+</p>
+
+<h1 [class.red] = isActive [class.green] = !isActive>Add Class Test</h1>
+
+<h2 [style.color] = "isActive ? 'red' : 'green' ">Change Color Test</h2>
+
+<input type="text" (keyup)="btnKeyup($event)" placeholder="key up test"/>
+<br>
+<input type="text" (keyup.enter)="btnKeyup($event)" placeholder="enter test"/>
+
+<p>{{ result }}</p>
+
+
+
+<input type="text" #txtname placeholder=" button test"/>
+<button (click)="btnAdd(txtname)">Add</button>
+
+<p>{{ result2 }}</p>
+
+<input [(ngModel)] = "name">
+<p>My Name: {{ name }}</p>

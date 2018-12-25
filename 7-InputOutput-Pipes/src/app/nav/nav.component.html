@@ -1,0 +1,20 @@
+<nav>
+<ul>
+  <li>
+    <a routerLink="/">Home Page</a>      
+  </li>
+  <li>
+    <a routerLink="/About">About Us</a>
+  </li>
+  <li>
+    <a routerLink="/Contact">Contact Us</a>
+  </li>
+
+  <li  *ngIf='!isLoggin'>
+    <button>login</button>
+  </li>
+  <li  *ngIf='isLoggin'>
+    <button>loggout</button>
+  </li>
+</ul>
+</nav>

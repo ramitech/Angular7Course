@@ -1,0 +1,9 @@
+<h1>
+  add student
+</h1>
+
+<form #addForm="ngForm" (ngSubmit)="addNew(addForm)">
+  <input type="text" name="txtName" ngModel />
+  <input type="text" name="txtAge" ngModel />
+  <button type="submit">Add</button>
+</form>

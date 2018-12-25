@@ -1,0 +1,15 @@
+<p>
+  directive works!
+</p>
+
+<ul>
+  <li *ngFor="let x of data;index as i;first as f">index {{ i }} 
+    <p *ngIf="f">I am First</p>
+    Name {{ x }}</li>
+</ul>
+
+<div [ngSwitch] = "x">
+  <p *ngSwitchCase= "1">One</p>
+  <p *ngSwitchCase= "2">Two</p>
+  <p *ngSwitchDefault>Default</p>
+</div>

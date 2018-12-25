@@ -1,0 +1,15 @@
+<p>
+  to-do-list works!
+</p>
+
+<input (keyup.enter)="btnClick($event.target)" placeholder="enter a task" #task />
+<button (click)="btnClick(task)">Add</button>
+
+<ul>
+  <li *ngFor ="let task of data">
+    {{ task }}
+  </li>
+</ul>
+
+
+

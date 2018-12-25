@@ -1,0 +1,14 @@
+ <h1 style="text-align: center">
+  {{ title }}
+  </h1>
+  
+
+<div style="text-align: center">
+  <button (click)="btnClick()">Change Title</button>
+</div>
+
+<ul>
+  <li *ngFor="let obj of data">
+    {{ obj.name }}
+  </li>
+</ul>

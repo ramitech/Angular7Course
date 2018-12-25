@@ -1,0 +1,26 @@
+
+<h1 style="text-align: center"> contact works!</h1>
+
+
+<p>{{today | date:'yy/MM/dd'}}</p>
+<p>{{x | titlecase}}</p>
+<p>{{myNumber }}</p>
+<p>{{title | titlecase}}</p>
+<p>{{title | slice:0:3}}</p>
+<p>{{userInfo | json}}</p>
+<p>{{orderNum | number:'4.0-0'}}</p>
+<p>{{z | number :'4.2-4'}}</p>
+<p>{{salary | currency :'ILS'}}</p>
+
+
+<p *ngFor="let n of numbers | custom :'xyz'">{{n}}</p>
+
+<button (click) ='addToArray()'>add to array</button>
+
+
+
+<!-- 
+<app-card [varFromParent]="userInfo" >
+    test test 
+</app-card> -->
+

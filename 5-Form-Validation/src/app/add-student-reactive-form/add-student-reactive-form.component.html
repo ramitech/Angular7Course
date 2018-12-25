@@ -1,0 +1,15 @@
+<h1>
+  add student reactive form
+</h1>
+
+
+<form [formGroup]="myForm" (ngSubmit)="addNew3()">
+ Name: <input formControlName="txtName" />
+ <p style="color:red" *ngIf="myForm.controls.txtName.touched && myForm.controls.txtName.errors.required">
+   Name is required
+ </p>
+ Age: <input formControlName="txtAge" />
+ <br>
+  <button type="submit">Add</button>
+  <button type="button" (click)="resetForm()">Reset</button>
+</form>

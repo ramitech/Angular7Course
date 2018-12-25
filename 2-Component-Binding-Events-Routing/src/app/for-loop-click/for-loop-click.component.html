@@ -1,0 +1,12 @@
+<p>
+  for-loop-click Test!
+</p>
+
+<button (click)="btnClick()">Add New</button>
+
+<ul>
+  <li *ngFor="let obj of data">
+    Id :{{obj.id}} Name: {{obj.name}}
+  </li>
+</ul>
+

@@ -1,0 +1,23 @@
+<h1>
+  add student validation
+</h1>
+
+<span style="color:red">{{ errorMsg }}</span>
+<form #addForm="ngForm" (ngSubmit)="addNew(addForm)">
+  <input type="text" name="txtName" ngModel required  placeholder="name"/>
+  <input type="text" name="txtAge" ngModel minlength="2" placeholder="age" />
+  <button type="submit">Add</button>
+</form>
+
+
+<h1>
+  Add Student Validation inline html
+</h1>
+
+<form #addForm2="ngForm" (ngSubmit)="addNew2(addForm2)">
+  <input type="text" name="txtName" #txtName="ngModel" required ngModel placeholder="name" />
+  <p *ngIf = 'addForm2.submitted && txtName.errors.required'>you should enter name</p>
+  <input type="text" name="txtAge" #txtAge="ngModel" required ngModel placeholder="age"/>
+  <p *ngIf = 'txtAge.touched && txtName.errors.required'>you should enter age</p>
+  <button type="submit">Add</button>
+</form>
